@@ -1,9 +1,14 @@
 ﻿// Написать программу вычисления произведения чисел от 1 до N
+// Почему при введении числа больше 33 (34, 35 и тд) получается ноль? про переполнение понимаю, при некоторых числах появляется минусовое значение, но с нулем пока не понял
 Console.WriteLine("Введите число N");
-int n = Convert.ToInt32(Console.ReadLine());
-int mod = 1;
-for (int i = 1; i < n + 1; i++)
+int a = Convert.ToInt32(Console.ReadLine());
+int modify(int n)
 {
-    mod = mod * i;
+    int mod = 1;
+    for (int i = 1; i < n + 1; i++)
+    {
+        mod = mod * i;
+    }
+    return mod;
 }
-Console.WriteLine("Произведение чисел от 1 до " + n + " равно: " + mod);
+Console.WriteLine("Произведение чисел от 1 до " + a + " равно: " + modify(a));
