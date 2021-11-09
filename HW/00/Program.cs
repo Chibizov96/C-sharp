@@ -1,4 +1,8 @@
 ﻿Console.WriteLine("Введите число:");
-int a = Convert.ToInt32(Console.ReadLine());
-int result = a * a;
-Console.WriteLine(result);
+int b = Convert.ToInt32(Console.ReadLine());
+int Method(int a)
+{
+    int result = a * a;
+    return result;
+}
+Console.WriteLine(Method(b));
