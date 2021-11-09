@@ -9,3 +9,4 @@ void Method(int maximum)
         if (i % 2 == 0) Console.Write(i + " ");
     }
 }
+Method(maximum);

@@ -7,12 +7,10 @@ void Method(int maximum)
 {
     int minimum;
     minimum = -maximum;
-    int index;
-    index = minimum;
-    while (index <= maximum)
+    while (minimum <= maximum)
     {
-        Console.Write(index + " ");
-        index++;
+        Console.Write(minimum + " ");
+        minimum++;
     }
 }
 Method(max);
